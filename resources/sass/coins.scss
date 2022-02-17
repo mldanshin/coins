@@ -1,0 +1,56 @@
+.coins-dashboard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem 0;
+    & .icon {
+        @extend .icon-md
+    }
+}
+
+.coins-short-dashboard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-self: center;
+    gap: 1rem;
+    & .icon {
+        @extend .icon-md
+    }
+}
+
+.coins-not-found {
+    margin: 1rem;
+    background-color: var(--color-background);
+    color: #ffffff;
+}
+
+.pagination {
+    display: inline-flex;
+    flex-direction: row;
+    font-size: 1.5rem;
+}
+
+.pagination-button {
+    padding: 0 0.8rem;
+    color: var(--color-background-intense);
+}
+
+.pagination-active {
+    padding: 0 0.8rem;
+    background-color: var(--color-background-intense);
+    color: #ffffff;
+}
+
+.pagination-disabled {
+    padding: 0 0.8rem;
+    color:var(--color-small);
+}
+
+.paginator-link {
+    overflow-x: auto;
+    @media screen and (max-width: 31rem) {
+        width: 95vw;
+    }
+}

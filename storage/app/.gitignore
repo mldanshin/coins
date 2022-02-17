@@ -1,0 +1,6 @@
+danshin/
+public/download/
+public/image/*
+public/image_temp/
+!public/image/default.svg
+!.gitignore

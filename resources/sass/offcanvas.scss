@@ -1,0 +1,37 @@
+.collapse-button-show,
+.collapse-button-close {
+    @media screen and (min-width: 37rem) {
+        display: none;
+    }
+}
+
+.collapse-button-close {
+    @media screen and (max-width: 37rem) {
+        align-self: flex-end;
+        position: sticky;
+        top: 15px;
+        right: 10px;
+    }
+}
+
+.collapse {
+    @media screen and (max-width: 37rem) {
+        z-index: 2;
+        position: fixed;
+        top: 0;
+        left: -120rem;
+        width: 100vw;
+        height: 100vh;
+        overflow-y: auto;
+    }
+}
+
+.collapse-show {
+    left: 0;
+    transition: left 1s ease;
+}
+
+.collapsing {
+    left: -120rem;
+    transition: left 1s ease;
+}

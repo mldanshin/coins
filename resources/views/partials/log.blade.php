@@ -1,0 +1,1 @@
+<input id="log-url" type="hidden" value="{{ route('log') }}">

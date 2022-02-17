@@ -1,0 +1,21 @@
+.ordiring-container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-background-ordering-container);
+}
+
+.ordiring-section {
+    display: grid;
+    grid-template-columns: 1fr 0.1fr;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--color-background-ordering-container);
+}
+
+.ordiring-section-title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: center;
+    text-align: center;
+}

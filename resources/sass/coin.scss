@@ -1,0 +1,129 @@
+.coin-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    align-items: center;
+    row-gap: 1rem;
+    @media screen and (min-width: 40rem) {
+        margin: 0 1rem;
+    }
+}
+
+.coin-card {
+    margin: 1rem;
+    padding: 1rem;
+    @media screen and (max-width: 56rem) {
+        border: 2px solid var(--color-background);
+    }
+    @media screen and (min-width: 56rem) {
+        box-shadow: 0px 1px 39px 8px var(--color-background);
+        -webkit-box-shadow: 0px 1px 39px 8px var(--color-background);
+        -moz-box-shadow: 0px 1px 39px 8px var(--color-background);
+    }
+}
+
+.coin-table-reader {
+    @media screen and (max-width: 28rem) {
+        display: flex;
+        flex-direction: column;
+        & > :nth-child(odd) {
+            color: var(--color-small);
+            margin-top: 1rem;
+        }
+        & > :nth-child(even) {
+            border-bottom: 1px solid var(--color-background);
+        }
+    }
+    @media screen and (min-width: 28rem) {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+        align-items: end;
+        margin: 1rem 0;
+        row-gap: 1rem;
+        & > * {
+            border-bottom: solid var(--color-background) 2px;
+        }
+    }
+}
+
+.coin-table-editor {
+    @media screen and (max-width: 28rem) {
+        display: flex;
+        flex-direction: column;
+        & .coin-table-label {
+            margin-top: 1rem;
+        }
+    }
+    @media screen and (min-width: 28rem) {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+        align-items: end;
+        margin: 1rem 0;
+        & .coin-table-label {
+            border-bottom: solid var(--color-background) 1px;
+        }
+        & > .coin-table-value {
+            margin-top: 1rem;
+        }
+    }
+}
+
+.coin-table-help {
+    color: var(--color-small);
+    grid-column: 2;
+}
+
+.coin-table-alert {
+    @extend .alert;
+    grid-column: 2;
+}
+
+.coin-dashboard {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    & .icon {
+        @extend .icon-lg
+    }
+}
+
+.picture-reader {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+    & .coin-picture {
+        width: 9rem;
+    }
+}
+
+.picture-editor {
+    gap: 1rem;
+    margin: 1rem 0;
+    & .coin-picture {
+        width: 9rem;
+    }
+    @media screen and (max-width: 28rem) {
+        display: flex;
+        flex-direction: column;
+    }
+    @media screen and (mIN-width: 28rem) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+}
+
+.picture-short {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    & .coin-picture {
+        width: 4rem;
+    }
+}

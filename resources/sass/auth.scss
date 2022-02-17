@@ -1,0 +1,15 @@
+.auth-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1eded;
+}
+
+.auth-form {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    gap: 1rem;
+    margin: 2rem;
+}

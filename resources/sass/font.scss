@@ -1,0 +1,18 @@
+$font-family-sans-serif:
+  // Кросс-платформенное общее семейство шрифтов (шрифт пользовательского интерфейса по умолчанию)
+  system-ui,
+  // Safari для macOS и iOS (San Francisco)
+  -apple-system,
+  // Windows
+  "Segoe UI",
+  // Android
+  Roboto,
+  // Простой веб резерв
+  "Helvetica Neue", Arial,
+  // Linux
+  "Noto Sans",
+  "Liberation Sans",
+  // Резервный вариант без засечек
+  sans-serif,
+  // Emoji шрифты
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;

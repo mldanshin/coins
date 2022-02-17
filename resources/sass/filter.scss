@@ -1,0 +1,52 @@
+.filter-container {
+    display: flex;
+    background-color: var(--color-background-filter-container);
+    @media screen and (max-width: 37rem) {
+        flex-direction: row;
+        justify-content: center;
+    }
+    @media screen and (min-width: 37rem) {
+        flex-direction: column;
+    }
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-background-filter-container);
+}
+
+.filter-container-title {
+    align-self: center;
+    padding: 1rem;
+}
+
+.filter-section {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+    gap: 1rem;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    background-color: var(--color-background-filter-section);
+}
+
+.filter-section-period {
+    @extend .filter-section;
+    grid-template-columns: 0.2fr 1fr;
+}
+
+.filter-section-title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: center;
+    text-align: center;
+}
+
+.filter-buttons {
+    align-self: flex-end;
+    @media screen and (max-width: 37rem) {
+        position: sticky;
+        bottom: 15px;
+        right: 10px;
+    }
+}
